@@ -7,6 +7,8 @@ module.exports = {
         heroPattern: "url('/src/images/hero.png')",
         ourStoryPattern: "url('/src/images/bg-OUR STORY.png')",
         servicePattern: "url('/src/images/bg-SERVICES.png')",
+        instaPattern: "url('/src/images/bg-INSTA.png')",
+        inTouchPattern: "url('/src/images/bg-IN TOUCH.png')",
         
       },
       backgroundColor: {
