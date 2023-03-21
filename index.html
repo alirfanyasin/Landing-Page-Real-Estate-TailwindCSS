@@ -14,23 +14,27 @@
   <div class="mb-32 bg-center bg-cover bg-heroPattern">
     <!-- START : Navbar -->
     <div class="container relative mx-auto text-white">
-      <nav class="flex flex-col items-center justify-between p-6 py-12 md:flex-row ">
+      <nav class="flex items-center justify-between p-6 py-5 md:py-12 ">
         <div class="brand-logo">
           <h1 class="font-bold"><i class="mr-6 fa-solid fa-bars"></i> Constructor</h1>
         </div>
-        <div class="text-gray-300">
+        <div class="hidden text-gray-300 md:block">
           <i class="fa-solid fa-magnifying-glass "></i>
           <span class="ml-6">Search</span>
         </div>
-        <div class="flex space-x-12">
+        <div class="hidden space-x-12 md:flex">
           <a href="" class="hover:text-gray-300">About</a>
           <a href="" class="hover:text-gray-300">Service</a>
           <a href="" class="hover:text-gray-300">Reviews</a>
           <a href="" class="hover:text-gray-300">Contact</a>
         </div>
+        <div class="md:hidden">
+          <a href="" class="hover:text-orange-500">Menu</a>
+        </div>
         <div>
           <a href="" class="hover:text-orange-500">Get In Touch</a>
         </div>
+        
       </nav>
 
     </div>
@@ -39,15 +43,16 @@
 
     <!-- START : Hero Section -->
     <div class="container flex flex-col items-center justify-center mx-auto" id="hero-section">
-      <div class="w-40 py-3 mt-32 mb-20 font-bold text-center text-white uppercase rounded-full bg-badgeContent1">Real
+      <div class="w-40 py-3 mt-32 mb-20 text-sm font-bold text-center text-white uppercase rounded-full bg-badgeContent1">Real
         Estate
       </div>
-      <h1 class="py-32 mb-12 text-center text-white text-7xl">Invest on Real Estate with <br>
+      <h1 class="py-32 mb-12 text-6xl text-center text-white md:text-7xl">Invest on Real Estate with <br>
         Our Company</h1>
-      <div class="flex flex-col mt-12 mb-32 space-x-16 md:flex-row">
-        <div class="font-semibold text-white"><i class="mr-4 fa-solid fa-paper-plane"></i> 225 S 1st St Brooklyn, NY
+        
+      <div class="grid grid-rows-3 mt-12 mb-32 space-x-12 leading-10 md:grid-cols-3">
+        <div class="font-semibold text-left text-white"><i class="mr-4 fa-solid fa-paper-plane"></i> 225 S 1st St Brooklyn, NY
         </div>
-        <div class="font-semibold text-white"><i class="mr-4 fa-solid fa-phone"></i> (929) 356-0147 </div>
+        <div class="font-semibold text-left text-white"><i class="mr-4 fa-solid fa-phone"></i> (929) 356-0147 </div>
         <div class="font-semibold text-white"><i class="mr-4 fa-solid fa-envelope"></i> hotel@gmail.com </div>
       </div>
 
@@ -60,42 +65,42 @@
 
 
   <!-- START : Our Story -->
-  <div class="container flex flex-col justify-center mx-auto mt-60" id="our-story-section">
+  <div class="container w-full mx-auto mt-60" id="our-story-section">
     <div
       class="w-40 py-3 mx-auto mb-20 font-bold text-center uppercase rounded-full text-badgeContent2 bg-badgeBgContent2">
       Our
       Story
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-ourStoryPattern">
-        <h2 class="pt-20 pb-12 text-5xl font-bold text-center text-gray-600">We Will Find the Best Option</h2>
+        <h2 class="w-full pt-20 pb-12 text-4xl font-bold text-center text-gray-600 md:text-5xl">We Will Find the Best Option</h2>
       </div>
     </div>
 
-    <div class="container mt-20 text-center md:px-32">
-      <p class="text-2xl font-semibold leading-loose text-gray-500">Real estate is "property consisting of land and the
+    <div class="container px-10 mt-5 text-center md:mt-20 md:px-32">
+      <p class="text-lg font-semibold text-gray-500 md:text-2xl">Real estate is "property consisting of land and the
         buildings on
         it, along with
         its
         natural
         resources such as
-        crops, <br> minerals or water, immovable property of this nature; an interest vested in this (also) an item of
+        crops, <br class="hidden md:block"> minerals or water, immovable property of this nature; an interest vested in this (also) an item of
         real
-        property, <br>(more generally) buildings or housing in general.</p>
+        property, <br class="hidden md:block">(more generally) buildings or housing in general.</p>
     </div>
 
 
-    <div class="container flex flex-col gap-10 mx-auto mt-20 md:flex-row">
-      <div class="w-1/3 text-center bg-white rounded-md">
+    <div class="container flex flex-col gap-10 px-10 mx-auto mt-20 md:flex-row">
+      <div class="w-full text-center bg-white rounded-md md:w-1/3">
         <h3 class="pt-10 text-4xl font-semibold text-gray-600">15 Years</h3>
         <p class="pb-10 mt-6 text-2xl text-gray-400">In Business</p>
       </div>
-      <div class="w-1/3 text-center bg-white rounded-md">
+      <div class="w-full text-center bg-white rounded-md md:w-1/3">
         <h3 class="pt-10 text-4xl font-semibold text-gray-600">$1 Billion</h3>
         <p class="pb-10 mt-6 text-2xl text-gray-400">Property Brokered</p>
       </div>
-      <div class="w-1/3 text-center bg-white rounded-md">
+      <div class="w-full text-center bg-white rounded-md md:w-1/3">
         <h3 class="pt-10 text-4xl font-semibold text-gray-600">10,000</h3>
         <p class="pb-10 mt-6 text-2xl text-gray-400">Transactions</p>
       </div>
@@ -110,50 +115,50 @@
       Services
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-servicePattern">
-        <h2 class="pt-20 pb-12 text-5xl font-bold text-center text-gray-600">Services for Maximum Efficiency</h2>
+        <h2 class="pt-20 pb-12 text-4xl font-bold text-center text-gray-600 md:text-5xl">Services for Maximum Efficiency</h2>
       </div>
     </div>
 
-    <div class="container mt-20 text-center md:px-32">
-      <p class="text-2xl font-semibold leading-loose text-gray-500">Real estate is "property consisting of land and the
+    <div class="container px-10 mt-5 text-center md:mt-20 md:px-32">
+      <p class="text-lg font-semibold leading-loose text-gray-500 md:text-2xl">Real estate is "property consisting of land and the
         We have developed a unique space where you can work and create. We thought of everything to the smallest <br>
         detail.
         You will be able to conduct your business, conduct meetings, meetings.</p>
     </div>
 
 
-    <div class="container flex flex-col gap-10 mx-auto mt-20 justify-evenly md:flex-row">
-      <div class="text-center ">
-        <div class="flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
+    <div class="container flex flex-col gap-10 mx-auto mt-20 md:justify-evenly md:flex-row">
+      <div class="flex justify-center mb-24 md:mb-28">
+        <div class="relative flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
           <img src="src/images/icon-home.png" class="w-20" alt="Icon Home">
+          <h4 class="absolute bottom-0 text-2xl font-semibold text-center -mb-14 md:-mb-20">House</h4>
         </div>
-        <h4 class="mt-20 text-2xl font-semibold">House</h4>
       </div>
-      <div class="text-center ">
-        <div class="flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
+      <div class="flex justify-center mb-32">
+        <div class="relative flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
           <img src="src/images/icon-apatament.png" class="w-20" alt="Icon Home">
+          <h4 class="absolute bottom-0 text-2xl font-semibold text-center -mb-14 md:-mb-20">Appartament</h4>
         </div>
-        <h4 class="mt-20 text-2xl font-semibold">Appartament</h4>
       </div>
-      <div class="text-center ">
-        <div class="flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
+      <div class="flex justify-center mb-32">
+        <div class="relative flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
           <img src="src/images/icon-office.png" class="w-20" alt="Icon Home">
+          <h4 class="absolute bottom-0 text-2xl font-semibold text-center -mb-14 md:-mb-20">Office</h4>
         </div>
-        <h4 class="mt-20 text-2xl font-semibold">Office</h4>
       </div>
-      <div class="text-center ">
-        <div class="flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
+      <div class="flex justify-center mb-32">
+        <div class="relative flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
           <img src="src/images/icon-warehouse.png" class="w-20" alt="Icon Home">
+          <h4 class="absolute bottom-0 text-2xl font-semibold text-center -mb-14 md:-mb-20">Warehouse</h4>
         </div>
-        <h4 class="mt-20 text-2xl font-semibold">Warehouse</h4>
       </div>
-      <div class="text-center ">
-        <div class="flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
-          <img src="src/images/icon-parking.png" class="w-20" alt="Icon Home">
+      <div class="flex justify-center mb-32">
+        <div class="relative flex items-center justify-center w-48 h-48 bg-white rounded-full shadow-lg">
+          <img src="src/images/icon-parking.png" class="w-16" alt="Icon Home">
+          <h4 class="absolute bottom-0 text-2xl font-semibold text-center -mb-14 md:-mb-20">Parking</h4>
         </div>
-        <h4 class="mt-20 text-2xl font-semibold">Parking</h4>
       </div>
     </div>
   </div>
@@ -166,42 +171,42 @@
       Deals
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-ourStoryPattern">
         <h2 class="pt-20 pb-12 text-5xl font-bold text-center text-gray-600">Our Best Deals for Today</h2>
       </div>
     </div>
 
-    <div class="container mt-20 text-center md:px-32">
-      <p class="text-2xl font-semibold leading-loose text-gray-500">Real estate is "property consisting of land and the
+    <div class="container px-10 mt-5 text-center md:mt-20 md:px-32">
+      <p class="text-lg font-semibold leading-loose text-gray-500 md:text-2xl">Real estate is "property consisting of land and the
         Real estate is "property consisting of land and the buildings on it, along with its natural resources such as
         crops, minerals or water, immovable property of this nature.</p>
     </div>
 
 
     <!-- Tabs Nav start -->
-    <div class="container flex flex-col justify-center my-40 px-60 md:flex-row">
-      <div class="space-x-20">
+    <div class="container flex flex-col justify-center px-5 my-20 overflow-auto md:my-40 md:px-60">
+      <div class="flex justify-start space-x-16 md:space-x-20">
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500 active">House</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500 active">House</a>
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Appartament</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Appartament</a>
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Office</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Office</a>
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Warehouse</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Warehouse</a>
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Parking</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Parking</a>
         <a href="#"
-          class="text-2xl font-semibold text-gray-500 hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Commercial</a>
+          class="text-xl font-semibold text-gray-500 md:text-2xl hover:text-orange-500 hover:border-b-4 hover:border-orange-500">Commercial</a>
       </div>
     </div>
     <!-- Tabs Nav end -->
 
 
-    <div class="container flex justify-center mx-auto">
-      <div class="grid grid-cols-3 gap-5">
-        <div class="pt-20">
+    <div class="container px-10 mx-auto">
+      <div class="grid grid-rows-1 gap-5 md:grid-cols-3">
+        <a href="" class="block pt-20">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-1.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -221,8 +226,8 @@
               <span class="text-lg font-semibold text-white"><i class="fa-solid fa-thumbs-up"></i></span>
             </div>
           </div>
-        </div>
-        <div class="">
+        </a>
+        <a href="" class="block">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-2.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -239,8 +244,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="pt-20">
+        </a>
+        <a href="" class="block md:pt-20">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-3.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -257,8 +262,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="">
+        </a>
+        <a href="" class="block">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-4.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -275,8 +280,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="-mt-20">
+        </a>
+        <a href="" class="block md:-mt-20">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-5.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -293,8 +298,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="">
+        </a>
+        <a href="" class="block">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-6.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -311,8 +316,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="">
+        </a>
+        <a href="" class="block">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-7.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -329,8 +334,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="-mt-20">
+        </a>
+        <a href class="block md:-mt-20">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-8.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -347,8 +352,8 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
-        <div class="">
+        </a>
+        <a href="" class="block">
           <div class="relative w-full mb-3 bg-white rounded-lg">
             <img src="src/images/Image-card-9.png" class="w-full" alt="Card 1">
             <div class="p-8">
@@ -365,7 +370,7 @@
               <span class="font-semibold text-white">1995</span>
             </div>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
@@ -380,14 +385,14 @@
       Services
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-servicePattern">
-        <h2 class="pt-20 pb-12 text-5xl font-bold text-center text-gray-600">Services for Maximum Efficiency</h2>
+        <h2 class="pt-20 pb-12 text-4xl font-bold text-center text-gray-600 md:text-5xl">Services for Maximum Efficiency</h2>
       </div>
     </div>
 
-    <div class="container mt-20 text-center md:px-32">
-      <p class="text-2xl font-semibold leading-loose text-gray-500">Real estate is "property consisting of land and the
+    <div class="container px-10 mt-5 text-center md:mt-20 md:px-32">
+      <p class="text-lg font-semibold leading-loose text-gray-500 md:text-2xl">Real estate is "property consisting of land and the
         We have developed a unique space where you can work and create. We thought of everything to the smallest <br>
         detail.
         You will be able to conduct your business, conduct meetings, meetings.</p>
@@ -395,7 +400,7 @@
 
 
 
-    <div class="container grid grid-cols-3 gap-5 mx-auto mt-20">
+    <div class="container grid grid-rows-1 gap-5 px-10 mx-auto mt-20 md:grid-cols-3">
       <div class="avatar1">
         <div class="p-10 bg-white shadow-sm rounded-xl">
           <p class="text-lg font-semibold text-gray-400">
@@ -404,9 +409,9 @@
             company employs real professionals who will always
           </p>
         </div>
-        <div class="flex items-center mt-10">
+        <div class="flex items-center mt-5 mb-14 md:mt-10">
           <div class="mr-10 overflow-hidden rounded-full bg-avatar1">
-            <img src="src/images/avatar-1.png" class="w-20 " alt="">
+            <img src="src/images/avatar-1.png" class="w-20" alt="">
           </div>
           <div>
             <h3 class="text-lg font-bold text-gray-500">Herbert Lindsey</h3>
@@ -421,7 +426,7 @@
             allows him to get otherwise paid-for advertising at Google as well as all other search engines.
           </p>
         </div>
-        <div class="flex items-center mt-10">
+        <div class="flex items-center mt-5 mb-14 md:mt-10">
           <div class="mr-10 overflow-hidden rounded-full bg-avatar2">
             <img src="src/images/avatar-2.png" class="w-20 " alt="">
           </div>
@@ -438,7 +443,7 @@
             first full moon in the sky. It is truly a magnificent view even
           </p>
         </div>
-        <div class="flex items-center mt-10">
+        <div class="flex items-center mt-5 mb-14 md:mt-10">
           <div class="mr-10 overflow-hidden rounded-full bg-avatar3">
             <img src="src/images/avatar-3.png" class="w-20 " alt="">
           </div>
@@ -455,23 +460,23 @@
 
 
   <!-- START : Instagram -->
-  <div class="container relative flex flex-col justify-center mx-auto mt-60" id="our-story-section">
+  <div class="container relative flex flex-col justify-center mx-auto mt-60" id="instagram-section">
     <div
       class="w-40 py-3 mx-auto mb-20 font-bold text-center uppercase rounded-full text-badgeContent2 bg-badgeBgContent2">
       Instagram
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-instaPattern">
-        <h2 class="pt-40 text-5xl font-bold text-center text-gray-600 pb-28">Listen to Our Сustomers @house</h2>
+        <h2 class="pt-40 text-4xl font-bold text-center text-gray-600 md:text-5xl pb-28">Listen to Our Сustomers @house</h2>
       </div>
     </div>
 
-    <div class="container grid grid-cols-4 gap-8 mt-48">
+    <div class="container grid grid-cols-3 gap-3 px-10 mt-10 md:grid-cols-4 md:gap-8 md:mt-48">
       <a href="" class="relative flex items-center justify-center w-full">
         <img src="src/images/image-1.png" class="w-full" alt="">
-        <span class="absolute flex items-center justify-center w-20 h-20 bg-opacity-50 rounded-full bg-slate-800"><i
-            class="text-3xl text-white fa-brands fa-instagram"></i></span>
+        <span class="absolute flex items-center justify-center bg-opacity-50 rounded-full w-14 h-14 md:w-20 md:h-20 bg-slate-800"><i
+            class="text-2xl text-white fa-brands fa-instagram"></i></span>
       </a>
       <a href="" class="w-full">
         <img src="src/images/image-2.png" class="w-full" alt="">
@@ -498,9 +503,9 @@
 
 
     <!-- Button Slider start  -->
-    <a href="#" class="absolute left-0 flex items-center justify-center w-20 h-20 bg-white rounded-full top-60"><i
+    <a href="#" class="absolute left-0 flex items-center justify-center w-12 h-12 bg-white rounded-full md:w-20 md:h-20 top-96 md:top-60"><i
         class="text-2xl text-gray-400 fa-solid fa-arrow-left"></i></a>
-    <a href="#" class="absolute right-0 flex items-center justify-center w-20 h-20 bg-white rounded-full top-60"><i
+    <a href="#" class="absolute right-0 flex items-center justify-center w-12 h-12 bg-white rounded-full md:w-20 md:h-20 top-96 md:top-60"><i
         class="text-2xl text-gray-400 fa-solid fa-arrow-right"></i></a>
     <!-- Button Slider end -->
   </div>
@@ -515,21 +520,21 @@
       Contact
     </div>
 
-    <div class="container px-32">
+    <div class="container md:px-32">
       <div class="bg-center bg-cover bg-inTouchPattern">
-        <h2 class="pt-24 pb-16 text-5xl font-bold text-center text-gray-600">Get It Touch Now</h2>
+        <h2 class="pt-24 pb-16 text-4xl font-bold text-center text-gray-600 md:text-5xl">Get It Touch Now</h2>
       </div>
     </div>
 
-    <div class="container mt-20 text-center md:px-32">
-      <p class="text-2xl font-semibold leading-loose text-gray-500">We have developed a unique space where you can work
+    <div class="container mt-5 text-center md:mt-20 md:px-32">
+      <p class="px-10 text-lg font-semibold leading-loose text-gray-500 md:text-2xl">We have developed a unique space where you can work
         and create. We thought of everything to the smallest detail. You will be able to conduct your business, conduct
         meetings, meetings.</p>
     </div>
 
     <div class="container flex justify-center mx-auto mt-32">
       <form action="#" class="">
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid grid-rows-1 gap-10 md:grid-cols-2">
           <div class="relative w-96">
             <input type="text" class="w-full px-10 py-4 bg-white rounded-full" placeholder="First Name">
             <i class="absolute text-2xl text-gray-300 right-5 top-4 fa-solid fa-circle-user"></i>
@@ -563,13 +568,13 @@
 
 
   <!-- START : Footer -->
-  <div class="container mx-auto border-t-2 mt-52">
-    <div class="flex items-center justify-around py-28">
-      <div class="brand-title">
+  <div class="container mx-auto mt-20 border-t-2 md:mt-52" id="footer-section">
+    <div class="flex flex-col items-center md:flex-row md:justify-around py-28">
+      <div class="mb-10 brand-title md:mb-0">
         <h1 class="text-3xl font-bold text-gray-600">Contructor</h1>
       </div>
-      <div class="menu">
-        <div class="grid grid-cols-3 gap-5">
+      <div class="mb-10 menu md:mb-0">
+        <div class="grid grid-cols-3 gap-10 md:gap-5">
           <a href="#" class="text-lg font-semibold text-gray-500 hover:text-badgeContent3">Home</a>
           <a href="#" class="text-lg font-semibold text-gray-500 hover:text-badgeContent3">Gallery</a>
           <a href="#" class="text-lg font-semibold text-gray-500 hover:text-badgeContent3">Services</a>
