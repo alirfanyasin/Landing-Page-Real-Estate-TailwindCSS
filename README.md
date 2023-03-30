@@ -1,5 +1,5 @@
 # Landing-Page-Real-Estate-TailwindCSS
-Landing Page Real Estate in merupkan landing page untuk memberikan informasi terkait sewa menyewa rumah
+Landing Page Real Estate in merupkan landing page untuk memberikan informasi terkait properti baik itu tanah maupun bangunan
 
 ## Usage
 Silahkan tulis perintah dibawah untuk menginstal module yang digunakan
